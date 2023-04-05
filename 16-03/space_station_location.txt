@@ -1,0 +1,3 @@
+At 2023-03-19 11:54:04 the ISS was passing the following location, latitude: 50.7826 and longitude: 176.7911
+At 2023-03-19 11:54:07 the ISS was passing the following location, latitude: 50.7391 and longitude: 177.1285
+At 2023-03-19 11:54:10 the ISS was passing the following location, latitude: 50.7010 and longitude: 177.4172
