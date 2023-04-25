@@ -10,14 +10,18 @@ Ways to Change a Banknote -- SOLUTION
 # D1 =    1  1  1  1  1  1  1  1  1  1  1
 # D2 =    1
 #
-def num_ways(note, denom):
-   ways = [0 for amount in range(note + 1)]
-   ways[0] = 1
+"""
+Ways to Change a Banknote -- SOLUTION
 
-   for number in denom:
-      for amount in range(1, note + 1):
-         if number <= amount:
-            ways[amount] = ways[amount] + ways[amount-denom]
-      return ways[note]
+"""
 
-print(num_ways(6, [1,5]))
+def num_ways(note, denoms):
+    ways = [0 for amount in range(note + 1)]
+    ways[0] = 1
+    for num in denoms:
+        for amount in range(1, note + 1):
+            if num <= amount:
+                ways[amount] += ways[amount - num]
+    return ways[note]
+
+print(num_ways(6, [1, 5]))
